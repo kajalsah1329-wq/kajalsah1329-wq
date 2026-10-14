@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/Tour%20and%20travel/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Online Shopping</title>
+    <link rel="stylesheet" href="./index_files/index.css">
+    <link rel="stylesheet" href="./index_files/all.min.css">
+</head>
+<body cz-shortcut-listen="true">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#" class="logo">Shop<span>Ease.</span></a>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for products...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="nav-icons">
+                <button onclick="showWishlist()" title="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span id="wishCount">0</span>
+                </button>
+                <button onclick="toggleCart()" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="menu">
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#home">Home</a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#categories">Categories</a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#products">Products</a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#about">About Us</a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO SHOPEASE</p>
+            <h1>Discover Your<br>Perfect Shopping Style</h1>
+            <p>Find the best products at amazing prices.</p>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#products" class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+            <img src="./index_files/photo-1441986300917-64674bd600d8" alt="Shopping store">
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section" id="categories">
+        <h2>Shop By Category</h2>
+        <p class="subtitle">Explore our popular categories</p>
+
+        <div class="category-list">
+            <button class="category-btn active" data-category="All">All</button>
+            <button class="category-btn" data-category="Fashion">Fashion</button>
+            <button class="category-btn" data-category="Electronics">Electronics</button>
+            <button class="category-btn" data-category="Shoes">Shoes</button>
+            <button class="category-btn" data-category="Accessories">Accessories</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products section" id="products">
+        <h2>Our Products</h2>
+        <p class="subtitle">Choose your favourite products</p>
+
+        <div class="product-grid" id="productGrid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1539109136881-3be0616acf4b" alt="Women's Fashion Dress" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(1)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Women's Fashion Dress</h3>
+                <p>Rs. 1,800</p>
+                <button class="add-btn" onclick="addToCart(1)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1603252109303-2751441dd157" alt="Men's Casual Shirt" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(2)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Men's Casual Shirt</h3>
+                <p>Rs. 1,200</p>
+                <button class="add-btn" onclick="addToCart(2)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1505740420928-5e560c06d30e" alt="Wireless Headphones" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(3)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Wireless Headphones</h3>
+                <p>Rs. 2,500</p>
+                <button class="add-btn" onclick="addToCart(3)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1523275335684-37898b6baf30" alt="Smart Watch" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(4)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Smart Watch</h3>
+                <p>Rs. 3,200</p>
+                <button class="add-btn" onclick="addToCart(4)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1542291026-7eec264c27ff" alt="Running Shoes" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(5)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Running Shoes</h3>
+                <p>Rs. 2,800</p>
+                <button class="add-btn" onclick="addToCart(5)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1495555961986-6d4c1ecb7be3" alt="Classic Sneakers" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(6)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Classic Sneakers</h3>
+                <p>Rs. 2,200</p>
+                <button class="add-btn" onclick="addToCart(6)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1584917865442-de89df76afd3" alt="Stylish Handbag" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(7)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Stylish Handbag</h3>
+                <p>Rs. 1,900</p>
+                <button class="add-btn" onclick="addToCart(7)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./index_files/photo-1511499767150-a48a237f0083" alt="Sunglasses" loading="lazy">
+
+                <button class="wishlist-btn " onclick="toggleWishlist(8)" aria-label="Add to wishlist">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+
+            <div class="product-info">
+                <h3>Sunglasses</h3>
+                <p>Rs. 900</p>
+                <button class="add-btn" onclick="addToCart(8)">
+                    <i class="fas fa-shopping-cart"></i> Add To Cart
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+            <button onclick="toggleCart()" class="close-btn">×</button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-basket fa-3x"></i>
+                <p>Your cart is empty!</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <h3>Total: <span id="cartTotal">Rs. 0</span></h3>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <h2>About ShopEase</h2>
+        <p>
+            ShopEase is a modern online shopping website where you can
+            discover fashion, electronics, shoes and accessories.
+            Our goal is to make online shopping simple, enjoyable and convenient.
+        </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="contact">
+        <h2>Stay Updated!</h2>
+        <p>Subscribe to receive our latest offers and updates.</p>
+        <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Enter your email" required="">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Shop<span>Ease.</span></h2>
+        <p>Shopping made easy, shopping made better.</p>
+        <div class="social-icons">
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="http://127.0.0.1:5500/Tour%20and%20travel/index.html#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./index_files/index.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
